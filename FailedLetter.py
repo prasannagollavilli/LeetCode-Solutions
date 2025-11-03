@@ -15,3 +15,9 @@ file_path = 'C:\\Users\\prasa\\Desktop\\Failedletter.txt'  # Replace with your a
 print_ids_list = extract_print_ids(file_path)
 print("Print IDs:", print_ids_list)
 print(print_ids_list)
+
+
+
+import os
+
+print("Current working directory:", os.getcwd())
