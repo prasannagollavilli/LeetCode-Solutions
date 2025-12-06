@@ -1,0 +1,14 @@
+class Solution(object):
+    def addToArrayForm(self, num, k):
+        result = "".join(str(i) for i in num)
+        u=int(result)+k
+        #print(u)
+        lis=[]
+        while(u!=0):
+            rem=u%10
+            lis.append(rem)
+            u=u//10
+        return lis[::-1]
+# Example usage:
+sol = Solution()
+print(sol.addToArrayForm([1,2,0,0],34))  #
